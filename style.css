@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+
+  text-align: center;
+}
+
+#hero {
+/*Foi pedido colocar a largura fixa de 592px. POrém, ela não se adequa ao tamanho da tela. Por isso coloquei a porcentagem*/
+
+  max-width: 670px;
+  width: 90%;
+
+  margin: auto;
+  
+}
+
+#hero img {
+  margin-bottom: 72px;
+}
+
+h1 {
+  font: 400 49px 'Inter', sans-serif;
+  line-height: 56px;
+
+  margin-bottom: 53px;
+}
+
+h1 span {
+  font-weight: 700;
+}
+
+span, a {
+  color: #ff9900;
+}
+/* Realmente não mudou a cor da fonte. Mas não entendi. O id não é mais forte? e a não tem a cascata?*/
+
+p, #footer {
+  color: #7D7987;
+
+  font-size: 14px;
+  line-height: 28px;
+
+  margin-bottom: 30px;
+}
+
+#footer {
+  padding-top: 8px;
+
+  border-top: 1px solid #ECEFF2;
+}
+
+#footer a + a {
+
+  margin-left: 28px;
+}
+
+#balls {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+}
+
+/*
+Possibilidades para dar o espaçamento entre as tags <a> dentro do #footer:
+#footer {
+  
+  width: 200px;
+  margin: auto;
+  
+  gap: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+ou como eu fiz
+*/
+
+/*
+Possibilidade para colocar a linha acima das tags <a>
+  Criar uma div #line
+
+  no css: 
+  #line {
+    width: 568px;
+    height: 0px;
+
+    margin: 0 auto 8px;
+
+    border: 1 px solid #
+
+ou como eu fiz: colocando #footer o border-top
+*/
